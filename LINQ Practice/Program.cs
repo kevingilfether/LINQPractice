@@ -14,7 +14,9 @@ namespace LINQ_Practice
 
             //LINQ to query short words
 
-            var shortWords = from word in words where word.Length <= 5 select word;
+            var shortWords = from word in words
+                             where word.Length <= 5
+                             select word;
 
             // iterate through LINQ result set
 
